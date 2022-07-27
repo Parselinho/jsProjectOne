@@ -65,6 +65,8 @@ function printQuote() {
    htmlString += `</p>`
    // printing the thing we wrote above
    document.getElementById('quote-box').innerHTML = htmlString; 
+   // change color everytime html quote is changing
+   changeColor();
 }
 // refresh the printquote every 15 seconds
 setInterval(printQuote, 15000);
